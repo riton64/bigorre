@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Images avec z-index</title>
+    <link rel="stylesheet" href="site.css">
+    <script src="jquery.min.js"></script>	
+  </head>
+  <body>
+        <header id="entete">
+	  <img id="image" src="html5css3jQuery.png">
+      <span id="titre">Album photos</span>
+	 <br />Choisissez l'image à afficher :&nbsp;
+		
+		<a id="i1" href=#>01</a>
+		<a id="i2" href=#>02</a>
+		<a id="i3" href=#>03</a>
+		<a id="i4" href=#>04</a> 
+		<a id="i5" href=#>05</a>
+		<a id="i6" href=#>06</a>
+		<a id="i7" href=#>07</a>
+		<a id="i8" href=#>08</a>
+		<a id="i9" href=#>09</a>
+		<a id="i10" href=#>10</a>
+	</header>	
+      
+       <article id="corps">
+	       <titre>L'album photos de Henri</titre>
+	   <p id="legende">Au-dessus de OUSTE près de Lourdes  février 2020</p>
+        	<img  id= "photo" src="images/IMG_0.jpg"/>	
+		<img  id= "photo" src="images/IMG_1.jpg" style="display: none;" />
+		<img  id= "photo" src="images/IMG_2.jpg" style="display: none;" />
+		<img  id= "photo" src="images/IMG_3.jpg" style="display: none;" />
+		<img  id= "photo" src="images/IMG_4.jpg" style="display: none;" />
+		<img  id= "photo" src="images/IMG_5.jpg" style="display: none;" />
+		<img  id= "photo" src="images/IMG_6.jpg" style="display: none;" />
+		<img  id= "photo" src="images/IMG_7.jpg" style="display: none;" />
+		<img  id= "photo" src="images/IMG_8.jpg" style="display: none;" />
+		<img  id= "photo" src="images/IMG_9.jpg" style="display: none;" />
+		<img  id= "photo" src="images/IMG_10.png" style="display: none;" />
+	    	
+	    <script>
+	      $(function(){
+		
+		$('#i1').click(function(){
+		      $('#photo').attr('src','images/IMG_1.jpg');
+	       	      $('p').text("Montagnes au-dessus de OUSTE    ");
+		     });
+		 $('#i2').click(function(){
+	 	      $('#photo').attr('src','images/IMG_2.jpg');
+		       $('p').text("Montages Pyrénéennes    ");	
+		    });
+	      $('#i3').click(function(){
+		      $('#photo').attr('src','images/IMG_3.jpg');
+			 $('p').text("Vue depuis le village  ");
+		    });
+		 $('#i4').click(function(){
+		      $('#photo').attr('src','images/IMG_4.jpg');
+			 $('p').text("  ");
+		    });
+		 $('#i5').click(function(){
+		      $('#photo').attr('src','images/IMG_5.jpg');
+			 $('p').text(" ");
+		    });
+	      $('#i6').click(function(){
+		      $('#photo').attr('src','images/IMG_6.jpg');
+			 $('p').text("  ");
+		    });
+		 $('#i7').click(function(){
+		      $('#photo').attr('src','images/IMG_7.jpg');
+		       $('p').text("Une partie du groupe UTLA   ");
+		     });
+		 $('#i8').click(function(){
+		      $('#photo').attr('src','images/IMG_8.jpg');
+			 $('p').text("Trophé d'un brave bélier ");
+		    });
+		 $('#i9').click(function(){
+		      $('#photo').attr('src','images/IMG_9.jpg');
+		       $('p').text(" Le repos bien mérité des guides ");
+		     });
+		 $('#i10').click(function(){
+		      $('#photo').attr('src','images/IMG_10.png');
+		       $('p').text(" Carte de la balade");
+		     });
+	      });
+	   </script>
+       </article>
+       <footer id="basdepage">
+       <span id="copy">Copyright (c) 2020 by Henri</span>
+    </footer> 
+   </body>
+</html>	
